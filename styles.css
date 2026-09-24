@@ -80,7 +80,7 @@ figure { margin: 0; }
   color: #30465a; font: 700 10px/1 var(--font-display); text-transform: uppercase; letter-spacing: .055em;
   transition: color .2s ease;
 }
-.nav__links a:hover, .nav__links a:focus-visible { color: var(--blue-700); }
+.nav__links a:hover, .nav__links a:focus-visible, .nav__links a.is-active { color: var(--blue-700); }
 
 .btn {
   min-height: 44px; padding: 0 18px; border: 0; border-radius: 2px;
