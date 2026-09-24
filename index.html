@@ -3,20 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Eletricista em Palhoça | PULSE Demo</title>
-  <meta name="description" content="Template demonstrativo PULSE para eletricistas locais. Eletricista em Palhoça para manutenção, instalações e correções elétricas em residências e pequenos comércios." />
+  <title>Eletricista em Palhoça | Rafael Martins — PULSE Demo</title>
+  <meta name="description" content="Site demonstrativo PULSE para eletricista local em Palhoça e região. Serviços elétricos residenciais e para pequenos comércios, com contato direto pelo WhatsApp." />
   <meta name="robots" content="noindex,follow,max-image-preview:large" />
-  <meta name="theme-color" content="#0b4f91" />
+  <meta name="theme-color" content="#075ca8" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-  <div class="demo-ribbon">
-    <div class="shell demo-ribbon__inner">
+  <div class="demo-bar">
+    <div class="shell demo-bar__inner">
       <span>PULSE</span>
       <strong>SITE DEMONSTRATIVO</strong>
       <span>DESTAQUE LOCAL | SITES</span>
@@ -26,20 +27,20 @@
   <header class="site-header" id="topo">
     <div class="shell nav">
       <a class="brand" href="#topo" aria-label="Rafael Martins Eletricista — início">
-        <span class="brand__mark">RM</span>
+        <span class="brand__mark" aria-hidden="true">RM</span>
         <span class="brand__copy"><strong>Rafael Martins</strong><small>Eletricista</small></span>
       </a>
 
       <nav class="nav__links" aria-label="Navegação principal">
-        <a href="#servicos" data-pending>Serviços</a>
-        <a href="#trabalhos" data-pending>Trabalhos</a>
-        <a href="#sobre" data-pending>Sobre</a>
-        <a href="#faq" data-pending>Dúvidas</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#diagnostico">Diagnóstico</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#faq">Dúvidas</a>
       </nav>
 
-      <button class="btn btn--hot nav__cta" type="button" data-demo-cta>
-        Pedir orçamento
-      </button>
+      <button class="btn btn--hot nav__cta" type="button" data-demo-cta>Pedir orçamento</button>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
         <span></span><span></span><span></span>
@@ -48,93 +49,405 @@
 
     <nav class="mobile-menu" id="menu-mobile" hidden>
       <div class="shell mobile-menu__inner">
-        <a href="#servicos" data-pending>Serviços</a>
-        <a href="#trabalhos" data-pending>Trabalhos</a>
-        <a href="#sobre" data-pending>Sobre</a>
-        <a href="#faq" data-pending>Dúvidas</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#diagnostico">Diagnóstico</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#area-atendida">Área atendida</a>
+        <a href="#faq">Dúvidas</a>
         <button class="btn btn--hot" type="button" data-demo-cta>Pedir orçamento</button>
       </div>
     </nav>
   </header>
 
   <main id="conteudo">
-    <section class="hero">
-      <div class="hero__texture" aria-hidden="true"></div>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
       <div class="shell hero__grid">
         <div class="hero__copy">
-          <p class="eyebrow">SERVIÇOS ELÉTRICOS EM PALHOÇA E REGIÃO</p>
-          <h1>Eletricista em <span>Palhoça.</span></h1>
-          <p class="hero__lead">
-            Manutenção, instalações e correções elétricas para residências e pequenos comércios,
-            com atendimento direto e serviço explicado com clareza.
-          </p>
+          <p class="eyebrow eyebrow--light">SERVIÇOS ELÉTRICOS EM PALHOÇA E REGIÃO</p>
+          <h1 id="hero-title">O eletricista que seu imóvel <span>precisa.</span></h1>
+          <p class="hero__lead">Manutenção, instalações e correções elétricas para residências e pequenos comércios, com atendimento direto e serviço explicado com clareza.</p>
+
+          <div class="hero__contact-line">
+            <span class="hero__contact-dot" aria-hidden="true"></span>
+            <div><small>CONTATO DIRETO</small><strong>Rafael Martins • Eletricista</strong></div>
+          </div>
 
           <div class="hero__actions">
-            <button class="btn btn--hot btn--large" type="button" data-demo-cta>
-              Pedir orçamento no WhatsApp
-            </button>
-            <a class="btn btn--ghost btn--large" href="#atalhos">Ver informações</a>
-          </div>
-
-          <div class="hero__proof" aria-label="Informações de confiança">
-            <span><b>01</b> Orçamento antes do serviço</span>
-            <span><b>02</b> Contato direto com Rafael</span>
-            <span><b>03</b> Palhoça e região</span>
+            <button class="btn btn--hot btn--large" type="button" data-demo-cta>Pedir orçamento</button>
+            <a class="btn btn--ghost btn--large" href="#servicos">Ver serviços</a>
           </div>
         </div>
 
-        <div class="hero__visual" aria-label="Rafael Martins, eletricista">
-          <div class="hero__frame hero__frame--one" aria-hidden="true"></div>
-          <div class="hero__frame hero__frame--two" aria-hidden="true"></div>
+        <div class="hero__visual">
+          <div class="hero__frame hero__frame--a" aria-hidden="true"></div>
+          <div class="hero__frame hero__frame--b" aria-hidden="true"></div>
           <figure class="hero__portrait">
-            <img src="assets/demo-rafael.avif" alt="Retrato demonstrativo de Rafael Martins, eletricista." fetchpriority="high" />
+            <img
+              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&fm=jpg&q=82&w=1600"
+              alt="Profissional de manutenção elétrica em ambiente de trabalho, usado como imagem ilustrativa do site demonstrativo."
+              fetchpriority="high"
+            />
           </figure>
-
-          <aside class="contact-card">
-            <span class="contact-card__label">FALE DIRETO COM RAFAEL</span>
-            <strong>Explique o que precisa resolver.</strong>
-            <p>Se puder, envie fotos para facilitar o primeiro entendimento.</p>
-            <button type="button" class="contact-card__link" data-demo-cta>Falar pelo WhatsApp <span>→</span></button>
-          </aside>
-
-          <div class="pulse-orb pulse-orb--one" aria-hidden="true"></div>
-          <div class="pulse-orb pulse-orb--two" aria-hidden="true"></div>
+          <span class="hero__demo-note">IMAGEM ILUSTRATIVA DO DEMO</span>
         </div>
       </div>
 
-      <div class="shell hero-links" id="atalhos">
-        <a class="hero-link" href="#servicos" data-pending>
-          <span class="hero-link__icon" aria-hidden="true">↯</span>
-          <span><small>EXPLORE</small><strong>Serviços elétricos</strong><em>Veja o que pode ser atendido</em></span>
-          <b>→</b>
+      <div class="shell hero-cards" aria-label="Atalhos principais">
+        <a class="hero-card" href="#servicos">
+          <span class="hero-card__index">01</span>
+          <span class="hero-card__icon" aria-hidden="true">↯</span>
+          <div><small>RESIDENCIAL</small><strong>Instalações e reparos</strong><p>Tomadas, iluminação, circuitos e outras necessidades do imóvel.</p></div>
+          <b aria-hidden="true">→</b>
         </a>
-        <a class="hero-link hero-link--blue" href="#trabalhos" data-pending>
-          <span class="hero-link__icon" aria-hidden="true">▦</span>
-          <span><small>CONHEÇA</small><strong>Trabalhos realizados</strong><em>Veja exemplos de execução</em></span>
-          <b>→</b>
+        <a class="hero-card hero-card--bright" href="#diagnostico">
+          <span class="hero-card__index">02</span>
+          <span class="hero-card__icon" aria-hidden="true">⌁</span>
+          <div><small>DIAGNÓSTICO</small><strong>Entender antes de trocar</strong><p>Falhas, desarmes, aquecimento e energia parcial pedem avaliação da causa.</p></div>
+          <b aria-hidden="true">→</b>
         </a>
-        <a class="hero-link hero-link--dark" href="#area-atendida" data-pending>
-          <span class="hero-link__icon" aria-hidden="true">⌖</span>
-          <span><small>ATENDIMENTO</small><strong>Palhoça e região</strong><em>Confira a área atendida</em></span>
-          <b>→</b>
+        <a class="hero-card hero-card--dark" href="#area-atendida">
+          <span class="hero-card__index">03</span>
+          <span class="hero-card__icon" aria-hidden="true">⌖</span>
+          <div><small>ATENDIMENTO LOCAL</small><strong>Palhoça e região</strong><p>Atendimento por deslocamento conforme disponibilidade.</p></div>
+          <b aria-hidden="true">→</b>
         </a>
       </div>
     </section>
 
-    <section class="next-section" aria-label="Próxima seção em desenvolvimento">
-      <div class="shell next-section__inner">
-        <p class="eyebrow eyebrow--blue">PRÓXIMA ETAPA</p>
-        <h2>Serviços será a próxima seção a entrar.</h2>
-        <p>A primeira dobra está isolada para validação visual antes de continuar a página.</p>
+    <section class="services section-pad" id="servicos">
+      <div class="shell services__grid">
+        <div class="services__visual">
+          <figure class="services__image services__image--main">
+            <img
+              src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?auto=format&fit=crop&fm=jpg&q=82&w=1500"
+              alt="Eletricista testando um painel elétrico com multímetro, imagem ilustrativa do demo."
+              loading="lazy"
+            />
+          </figure>
+          <figure class="services__image services__image--detail">
+            <img
+              src="https://images.unsplash.com/photo-1753272691001-4d68806ac590?auto=format&fit=crop&fm=jpg&q=82&w=900"
+              alt="Painel elétrico com componentes e fiação, imagem ilustrativa do demo."
+              loading="lazy"
+            />
+          </figure>
+          <span class="services__badge"><strong>6</strong><small>frentes de serviço<br />no demo</small></span>
+        </div>
+
+        <div class="services__copy">
+          <p class="eyebrow">O QUE POSSO ATENDER</p>
+          <h2>Serviços elétricos para a rotina do seu imóvel.</h2>
+          <p class="section-lead">Do reparo pontual à instalação de novos pontos e circuitos, o primeiro passo é entender o que realmente precisa ser resolvido.</p>
+
+          <div class="service-list">
+            <article><span>01</span><div><h3>Quadros e disjuntores</h3><p>Organização, substituições e correções.</p></div></article>
+            <article><span>02</span><div><h3>Tomadas e novos pontos</h3><p>Novas necessidades e adequações.</p></div></article>
+            <article><span>03</span><div><h3>Iluminação</h3><p>Luminárias, interruptores e circuitos.</p></div></article>
+            <article><span>04</span><div><h3>Chuveiros e circuitos</h3><p>Circuitos dedicados e avaliação de carga.</p></div></article>
+            <article><span>05</span><div><h3>Diagnóstico elétrico</h3><p>Falhas, desarmes e energia parcial.</p></div></article>
+            <article><span>06</span><div><h3>Fiação, DR e DPS</h3><p>Proteção, aterramento e melhorias.</p></div></article>
+          </div>
+
+          <button class="text-cta" type="button" data-demo-cta>Consultar um serviço <span>→</span></button>
+        </div>
       </div>
     </section>
 
-    <span id="servicos" class="anchor-sentinel"></span>
-    <span id="trabalhos" class="anchor-sentinel"></span>
-    <span id="sobre" class="anchor-sentinel"></span>
-    <span id="area-atendida" class="anchor-sentinel"></span>
-    <span id="faq" class="anchor-sentinel"></span>
+    <section class="estimate-strip">
+      <div class="shell estimate-strip__inner">
+        <p>Tem uma necessidade elétrica e quer saber por onde começar?</p>
+        <button class="btn btn--light" type="button" data-demo-cta>Falar com Rafael</button>
+      </div>
+    </section>
+
+    <section class="diagnostic" id="diagnostico">
+      <div class="diagnostic__bg" aria-hidden="true"></div>
+      <div class="shell diagnostic__content">
+        <p class="eyebrow eyebrow--light">ALGO NÃO ESTÁ NORMAL?</p>
+        <h2>Sinais elétricos merecem atenção antes de virarem um problema maior.</h2>
+        <p class="diagnostic__lead">Nem todo sintoma pede troca imediata. Primeiro, vale entender a causa e o que está acontecendo com a instalação.</p>
+
+        <div class="diagnostic__signals">
+          <article><strong>01</strong><h3>Disjuntor desarmando</h3><p>Avaliar a causa antes de substituir peças.</p></article>
+          <article><strong>02</strong><h3>Tomada aquecendo</h3><p>Identificar conexão, carga e condição do ponto.</p></article>
+          <article><strong>03</strong><h3>Parte sem energia</h3><p>Entender onde a falha começa e o que foi afetado.</p></article>
+        </div>
+
+        <div class="diagnostic__cards">
+          <article class="issue-card">
+            <div class="issue-card__image issue-card__image--one"></div>
+            <div><small>SINAL 01</small><h3>Cheiro de queimado ou aquecimento</h3><button type="button" data-demo-cta>Solicitar avaliação</button></div>
+          </article>
+          <article class="issue-card">
+            <div class="issue-card__image issue-card__image--two"></div>
+            <div><small>SINAL 02</small><h3>Quedas e desarmes recorrentes</h3><button type="button" data-demo-cta>Solicitar avaliação</button></div>
+          </article>
+          <article class="issue-card">
+            <div class="issue-card__image issue-card__image--three"></div>
+            <div><small>SINAL 03</small><h3>Ponto, chuveiro ou circuito sem funcionar</h3><button type="button" data-demo-cta>Solicitar avaliação</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust section-pad">
+      <div class="shell trust__grid">
+        <div class="trust__heading">
+          <p class="eyebrow">NO ATENDIMENTO</p>
+          <h2>Clareza antes, cuidado durante e conferência no final.</h2>
+        </div>
+
+        <div class="trust__items">
+          <article><span>01</span><div><h3>Explicação clara</h3><p>Você entende o que precisa ser feito antes do serviço começar.</p></div></article>
+          <article><span>02</span><div><h3>Tudo combinado antes</h3><p>Serviço, materiais e orçamento são alinhados antes da execução.</p></div></article>
+          <article><span>03</span><div><h3>Cuidado com o local</h3><p>Organização durante o trabalho e atenção ao acabamento.</p></div></article>
+          <article><span>04</span><div><h3>Conferência final</h3><p>O que foi executado é testado antes da finalização.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="works section-pad" id="trabalhos">
+      <div class="shell works__head">
+        <div>
+          <p class="eyebrow">EXEMPLOS VISUAIS</p>
+          <h2>Tipos de execução que o PULSE foi desenhado para destacar.</h2>
+        </div>
+        <p class="works__note">As imagens abaixo são ilustrativas do demo e não representam portfólio real de Rafael.</p>
+      </div>
+
+      <div class="shell works__grid">
+        <article class="work-card work-card--large">
+          <img src="https://images.unsplash.com/photo-1753272691001-4d68806ac590?auto=format&fit=crop&fm=jpg&q=82&w=1600" alt="Painel elétrico com componentes e fiação, imagem ilustrativa." loading="lazy" />
+          <div class="work-card__shade"></div>
+          <div class="work-card__copy"><span>01</span><small>IMAGEM ILUSTRATIVA</small><h3>Quadros e organização elétrica</h3><p>Composição preparada para mostrar um trabalho real quando houver foto do cliente.</p></div>
+        </article>
+
+        <article class="work-card">
+          <img src="https://images.unsplash.com/photo-1601462904263-f2fa0c851cb9?auto=format&fit=crop&fm=jpg&q=82&w=1200" alt="Cabos e fios elétricos, imagem ilustrativa." loading="lazy" />
+          <div class="work-card__shade"></div>
+          <div class="work-card__copy"><span>02</span><small>IMAGEM ILUSTRATIVA</small><h3>Fiação e adequações</h3></div>
+        </article>
+
+        <article class="work-card">
+          <img src="https://images.unsplash.com/photo-1566417110090-6b15a06ec800?auto=format&fit=crop&fm=jpg&q=82&w=1200" alt="Disjuntores e fiação em painel, imagem ilustrativa." loading="lazy" />
+          <div class="work-card__shade"></div>
+          <div class="work-card__copy"><span>03</span><small>IMAGEM ILUSTRATIVA</small><h3>Proteção e circuitos</h3></div>
+        </article>
+      </div>
+
+      <div class="shell works__foot">
+        <p>Quando o cliente tiver fotos reais, elas entram aqui como prova do serviço executado.</p>
+        <button class="text-cta" type="button" data-demo-cta>Tenho algo parecido para resolver <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="process section-pad" id="processo">
+      <div class="shell process__grid">
+        <div class="process__visual">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1665242043190-0ef29390d289?auto=format&fit=crop&fm=jpg&q=82&w=1400" alt="Profissional trabalhando em escada, imagem ilustrativa do demo." loading="lazy" />
+          </figure>
+          <span class="process__stamp">ATENDIMENTO<br />DIRETO</span>
+        </div>
+
+        <div class="process__copy">
+          <p class="eyebrow">COMO FUNCIONA</p>
+          <h2>Do primeiro contato ao serviço finalizado.</h2>
+          <p class="section-lead">Você explica o que precisa, Rafael avalia a situação e o serviço é combinado antes de começar.</p>
+
+          <ol class="process__steps">
+            <li><span>01</span><div><h3>Você conta o que precisa</h3><p>Envie mensagem e, se possível, fotos ou vídeos da situação.</p></div></li>
+            <li><span>02</span><div><h3>Rafael avalia o cenário</h3><p>As informações ajudam a entender o problema e se é preciso uma visita.</p></div></li>
+            <li><span>03</span><div><h3>O serviço é combinado</h3><p>O que será feito, materiais e orçamento são alinhados antes da execução.</p></div></li>
+            <li><span>04</span><div><h3>Execução e conferência</h3><p>O serviço é realizado e testado antes da finalização.</p></div></li>
+          </ol>
+
+          <button class="btn btn--hot" type="button" data-demo-cta>Começar pelo WhatsApp</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="avaliacoes">
+      <div class="reviews__bg" aria-hidden="true"></div>
+      <div class="shell reviews__inner">
+        <div class="reviews__head">
+          <p class="eyebrow eyebrow--light">AVALIAÇÕES DEMONSTRATIVAS</p>
+          <h2>Experiências que ajudam a mostrar como a prova social entra no PULSE.</h2>
+          <p>Textos abaixo pertencem à persona de demonstração e serão substituídos por avaliações reais de cada cliente.</p>
+        </div>
+
+        <div class="review-stage">
+          <article class="review-card review-card--featured">
+            <span class="quote-mark">“</span>
+            <p>Explicou o problema com clareza e deixou o quadro muito organizado.</p>
+            <footer><strong>Marcelo A.</strong><span>Pedra Branca • Palhoça</span></footer>
+          </article>
+          <article class="review-card">
+            <span class="quote-mark">“</span>
+            <p>Atendimento cuidadoso e orçamento explicado antes de começar o serviço.</p>
+            <footer><strong>Camila R.</strong><span>Pagani • Palhoça</span></footer>
+          </article>
+        </div>
+
+        <div class="reviews__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="sobre">
+      <div class="shell about__grid">
+        <div class="about__copy">
+          <p class="eyebrow">QUEM VAI TE ATENDER</p>
+          <h2>Atendimento local, direto com quem executa o serviço.</h2>
+          <p>Sou Rafael Martins, eletricista em Palhoça e região. Meu trabalho é atender necessidades elétricas de forma próxima e direta, desde pequenos reparos até instalações e adequações.</p>
+          <p>Quando você chama, a ideia é entender o que precisa ser resolvido e encontrar a solução adequada para o seu imóvel.</p>
+
+          <div class="about__contact">
+            <small>FALE DIRETO COM RAFAEL</small>
+            <strong>Explique o que está acontecendo e envie fotos quando possível.</strong>
+          </div>
+
+          <button class="btn btn--hot" type="button" data-demo-cta>Falar com Rafael</button>
+        </div>
+
+        <div class="about__visual">
+          <div class="about__frame" aria-hidden="true"></div>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&fm=jpg&q=82&w=1400" alt="Profissional de manutenção elétrica em ambiente de trabalho, imagem ilustrativa do demo." loading="lazy" />
+          </figure>
+          <div class="about__name"><strong>Rafael Martins</strong><span>Eletricista • Palhoça e região</span><small>PERSONA DEMONSTRATIVA</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="area" id="area-atendida">
+      <div class="area__bg" aria-hidden="true"></div>
+      <div class="shell area__head">
+        <p class="eyebrow eyebrow--light">ÁREA ATENDIDA</p>
+        <h2>Atendimento em Palhoça e região.</h2>
+        <p>Residências e pequenos comércios em Palhoça, São José e Florianópolis continental, conforme disponibilidade.</p>
+      </div>
+
+      <div class="shell area__cities">
+        <article><span>01</span><h3>Palhoça</h3><p>Pagani • Pedra Branca • Passa Vinte • Ponte do Imaruim • Bela Vista • Aririú</p></article>
+        <article><span>02</span><h3>São José</h3><p>Kobrasol • Campinas • Barreiros</p></article>
+        <article><span>03</span><h3>Florianópolis continental</h3><p>Estreito • Coqueiros • Capoeiras</p></article>
+      </div>
+
+      <div class="shell area__map">
+        <div class="area__map-label">
+          <small>BASE DE ATENDIMENTO</small>
+          <strong>Palhoça • Santa Catarina</strong>
+        </div>
+        <iframe
+          src="https://www.google.com/maps?q=Palho%C3%A7a%2C%20SC&z=11&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa demonstrativo da área de atendimento com foco em Palhoça, Santa Catarina"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="faq section-pad" id="faq">
+      <div class="shell faq__grid">
+        <div class="faq__visual">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?auto=format&fit=crop&fm=jpg&q=82&w=1200" alt="Eletricista testando painel elétrico, imagem ilustrativa do demo." loading="lazy" />
+          </figure>
+          <div class="faq__visual-copy">
+            <p class="eyebrow eyebrow--light">DÚVIDAS FREQUENTES</p>
+            <h2>Você não precisa saber o nome do problema para pedir ajuda.</h2>
+          </div>
+        </div>
+
+        <div class="faq__list">
+          <details open>
+            <summary>Não sei exatamente qual é o problema. Posso chamar mesmo assim?<span>+</span></summary>
+            <p>Sim. Explique o que está acontecendo e, quando possível, envie fotos ou vídeos. A avaliação começa pelas informações que você conseguir passar.</p>
+          </details>
+          <details>
+            <summary>O que acontece depois que eu mando mensagem?<span>+</span></summary>
+            <p>Você explica o que precisa e envia fotos ou vídeos quando possível. Rafael avalia o cenário e verifica se é preciso uma visita. Depois, o serviço é combinado antes da execução.</p>
+          </details>
+          <details>
+            <summary>Como funciona o orçamento?<span>+</span></summary>
+            <p>As informações do primeiro contato ajudam na avaliação inicial. Quando for necessária uma visita, o orçamento é apresentado antes da execução.</p>
+          </details>
+          <details>
+            <summary>O serviço só começa depois de tudo combinado?<span>+</span></summary>
+            <p>Sim. O que será feito, os materiais necessários e o orçamento são alinhados antes da execução.</p>
+          </details>
+          <details>
+            <summary>Como ficam os materiais do serviço?<span>+</span></summary>
+            <p>Os materiais necessários são combinados antes da execução. Quando preciso, Rafael orienta o que será necessário.</p>
+          </details>
+          <details>
+            <summary>Como sei se você atende minha região?<span>+</span></summary>
+            <p>O atendimento tem base em Palhoça e também pode ser realizado por deslocamento em São José e Florianópolis continental, conforme disponibilidade.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contato">
+      <div class="final-cta__bg" aria-hidden="true"></div>
+      <div class="shell final-cta__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">PRECISA RESOLVER ALGO ELÉTRICO?</p>
+          <h2>Conte o que está acontecendo. A conversa começa por aí.</h2>
+          <p>Se puder, envie uma foto ou vídeo. O primeiro contato é direto com Rafael.</p>
+        </div>
+        <button class="btn btn--hot btn--large" type="button" data-demo-cta>Falar no WhatsApp</button>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="shell footer__grid">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="#topo" aria-label="Rafael Martins Eletricista — voltar ao início">
+          <span class="brand__mark" aria-hidden="true">RM</span>
+          <span class="brand__copy"><strong>Rafael Martins</strong><small>Eletricista</small></span>
+        </a>
+        <p>Serviços elétricos para residências e pequenos comércios em Palhoça e região.</p>
+        <span class="footer__demo">PERSONA E SITE DEMONSTRATIVOS</span>
+      </div>
+
+      <div class="footer__block">
+        <h2>Navegação</h2>
+        <nav aria-label="Navegação do rodapé">
+          <a href="#servicos">Serviços</a>
+          <a href="#diagnostico">Diagnóstico</a>
+          <a href="#trabalhos">Trabalhos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#avaliacoes">Avaliações</a>
+          <a href="#faq">Dúvidas</a>
+        </nav>
+      </div>
+
+      <div class="footer__block">
+        <h2>Atendimento</h2>
+        <p>Palhoça</p>
+        <p>São José</p>
+        <p>Florianópolis continental</p>
+        <p>Conforme disponibilidade</p>
+      </div>
+
+      <div class="footer__contact">
+        <small>QUER FALAR AGORA?</small>
+        <h2>Explique o que precisa resolver.</h2>
+        <button class="btn btn--light" type="button" data-demo-cta>Pedir orçamento</button>
+      </div>
+    </div>
+
+    <div class="shell footer__bottom">
+      <span>© 2026 • PULSE — Destaque Local | SITES</span>
+      <span>Site demonstrativo • noindex</span>
+    </div>
+  </footer>
 
   <div class="demo-modal" id="demo-modal" hidden>
     <div class="demo-modal__backdrop" data-close-demo></div>
