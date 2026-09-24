@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# O demo permanece noindex via meta robots no HTML.
